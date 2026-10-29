@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chayan Vyas | Mechanical Engineer, Logistics &amp; Supply Chain</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#E8EDF1; --surface:#F6F8FA; --ink:#13243A; --muted:#51647A; --line:#BAC7D3; --accent:#E8500E; --accent-ink:#fff; --road:#13243A;
+  --d:'Bricolage Grotesque','Arial Black',Helvetica,sans-serif; --b:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F1B2B; --surface:#16273D; --ink:#EAF0F6; --muted:#9DB0C4; --line:#2C4260; --accent:#FF7A3D; --accent-ink:#0F1B2B; --road:#EAF0F6; color-scheme:dark;}}
+:root[data-theme="dark"]{--bg:#0F1B2B; --surface:#16273D; --ink:#EAF0F6; --muted:#9DB0C4; --line:#2C4260; --accent:#FF7A3D; --accent-ink:#0F1B2B; --road:#EAF0F6; color-scheme:dark;}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 var(--b);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--bg);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font:800 20px var(--d);text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo i{display:grid;place-items:center;width:32px;height:32px;background:var(--accent);color:var(--accent-ink);border-radius:8px;font-style:normal;font-size:15px}
+nav{display:flex;gap:22px;font-size:15px;font-weight:500}
+nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--ink)}
+@media(max-width:640px){nav a:nth-child(n+3){display:none}}
+
+/* hero */
+.hero{padding:72px 0 24px}
+.status{display:inline-flex;gap:10px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:6px 16px 6px 12px;font-size:15px;color:var(--muted)}
+.status b{width:10px;height:10px;border-radius:50%;background:#1FAA59;box-shadow:0 0 0 0 #1FAA59;animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px transparent}100%{box-shadow:0 0 0 0 transparent}}
+h1{font:800 clamp(56px,13vw,148px)/.9 var(--d);letter-spacing:-.04em;margin:28px 0 24px}
+h1 span{display:block}
+h1 span+span{color:transparent;-webkit-text-stroke:2px var(--ink)}
+.lede{font-size:clamp(19px,2.4vw,24px);line-height:1.45;max-width:30em;margin:0 0 32px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:14px 26px;border-radius:10px;font-weight:500;text-decoration:none;border:2px solid var(--ink);transition:transform .15s}
+.btn:hover{transform:translateY(-3px)}
+.btn.p{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+
+/* route: the one memorable moment */
+.route{margin:56px 0 0;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px 12px 8px;overflow:hidden}
+.route svg{width:100%;height:auto;display:block}
+.route text{font:500 14px var(--b);fill:var(--muted)}
+.route .stop{fill:var(--bg);stroke:var(--ink);stroke-width:3}
+.route .path{fill:none;stroke:var(--road);stroke-width:4;stroke-dasharray:2000;stroke-dashoffset:2000;animation:draw 5s .4s ease-out forwards}
+.route .lane{fill:none;stroke:var(--line);stroke-width:4;stroke-dasharray:2 12;stroke-linecap:round}
+@keyframes draw{to{stroke-dashoffset:0}}
+.cap{font-size:14px;color:var(--muted);padding:6px 12px 12px}
+
+section{padding:88px 0 0}
+h2{font:800 clamp(34px,5vw,52px)/1 var(--d);letter-spacing:-.03em;margin:0 0 36px;max-width:14em}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+@media(max-width:760px){.grid2{grid-template-columns:1fr}}
+p{margin:0 0 16px;max-width:38em}
+
+/* timeline (a true sequence) */
+.tl{border-left:3px solid var(--accent);padding-left:28px;position:relative}
+.tl::before{content:"";position:absolute;left:-10px;top:6px;width:17px;height:17px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 6px var(--bg)}
+.tl h3{font:800 26px/1.15 var(--d);margin:0 0 4px}
+.tl .meta{color:var(--muted);margin-bottom:18px}
+.tl ul{padding:0;margin:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px 28px}
+@media(max-width:760px){.tl ul{grid-template-columns:1fr}}
+.tl li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:16px;line-height:1.5}
+
+/* drawing title block */
+.sheet{background:var(--surface);border:2px solid var(--ink);border-radius:4px;display:grid;grid-template-columns:1.2fr 1fr}
+@media(max-width:760px){.sheet{grid-template-columns:1fr}}
+.sheet .art{border-right:2px solid var(--ink);padding:28px;display:grid;place-items:center;min-height:260px}
+@media(max-width:760px){.sheet .art{border-right:0;border-bottom:2px solid var(--ink)}}
+.sheet dl{margin:0;display:grid;grid-template-columns:auto 1fr}
+.sheet dt,.sheet dd{margin:0;padding:12px 18px;border-bottom:1px solid var(--line);font-size:15px}
+.sheet dt{color:var(--muted);border-right:1px solid var(--line)}
+.sheet dd{font-weight:500}
+.sheet dl>:nth-last-child(-n+2){border-bottom:0}
+.sheet h3{grid-column:1/-1;margin:0;padding:18px;border-bottom:2px solid var(--ink);font:800 22px/1.2 var(--d)}
+.proj-note{margin-top:20px;color:var(--muted);max-width:40em}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{font:800 19px var(--d);margin:0 0 14px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{border:1px solid var(--line);background:var(--bg);border-radius:99px;padding:4px 13px;font-size:15px}
+.tags span.hi{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:500}
+
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.edu .card b{font:800 40px/1 var(--d);display:block;margin:6px 0 4px;color:var(--accent)}
+.edu .card small{color:var(--muted);font-size:15px}
+.certs{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:10px}
+.certs li{padding:14px 18px;border-left:4px solid var(--accent);background:var(--surface);border-radius:0 10px 10px 0}
+
+.contact{background:var(--ink);color:var(--bg);border-radius:24px;padding:clamp(32px,6vw,72px);margin-top:0}
+.contact h2{color:var(--bg);max-width:12em}
+.contact p{color:var(--bg);opacity:.85}
+.contact .links{display:grid;gap:12px;margin-top:28px;max-width:520px}
+.contact .links a{display:flex;justify-content:space-between;gap:16px;padding:16px 20px;border:1px solid rgba(128,150,175,.5);border-radius:12px;text-decoration:none;transition:background .15s}
+.contact .links a:hover{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.contact .links span{opacity:.7}
+footer{padding:36px 0 48px;color:var(--muted);font-size:15px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.route .path{stroke-dashoffset:0}.status b{box-shadow:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="#top"><i>CV</i>Chayan Vyas</a>
+  <nav aria-label="Sections"><a href="#experience">Experience</a><a href="#project">Project</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main id="top">
+<div class="wrap">
+<div class="hero">
+  <div class="status"><b></b>Open to internships in automotive, EV and supply chain</div>
+  <h1><span>Chayan</span><span>Vyas</span></h1>
+  <p class="lede">Mechanical engineering student who already works the freight desk: vendors, dispatch and documentation, backed by CAD and manufacturing know-how.</p>
+  <div class="btns"><a class="btn p" href="#contact">Get in touch</a><a class="btn" href="#experience">See my experience</a></div>
+
+  <div class="route" role="img" aria-label="A route from Faridabad through logistics and procurement to the automotive and EV industry">
+    <svg viewBox="0 0 960 220" aria-hidden="true">
+      <path class="lane" d="M40 170 C 220 170, 230 70, 420 70 S 700 150, 900 60"/>
+      <path class="path" id="rt" d="M40 170 C 220 170, 230 70, 420 70 S 700 150, 900 60"/>
+      <circle class="stop" cx="40" cy="170" r="11"/><circle class="stop" cx="420" cy="70" r="11"/><circle class="stop" cx="900" cy="60" r="11" style="fill:var(--accent);stroke:var(--accent)"/>
+      <text x="40" y="205">Faridabad, B.Tech 2027</text>
+      <text x="420" y="45" text-anchor="middle">Logistics &amp; procurement</text>
+      <text x="900" y="35" text-anchor="end">Automotive &amp; EV</text>
+      <g>
+        <rect x="-26" y="-22" width="34" height="22" rx="3" fill="var(--accent)"/><rect x="10" y="-16" width="16" height="16" rx="3" fill="var(--ink)"/>
+        <circle cx="-14" cy="2" r="5" fill="var(--ink)"/><circle cx="16" cy="2" r="5" fill="var(--ink)"/>
+        <animateMotion dur="5s" begin="0.4s" fill="freeze" rotate="auto" keyPoints="0;1" keyTimes="0;1" calcMode="spline" keySplines=".2 .6 .3 1"><mpath href="#rt"/></animateMotion>
+      </g>
+    </svg>
+    <div class="cap">From the dispatch desk to the production floor.</div>
+  </div>
+</div>
+
+<section id="about">
+  <h2>Engineer’s mind, operator’s hands</h2>
+  <div class="grid2">
+    <div>
+      <p>I’m a Mechanical Engineering student at Manav Rachna University (2023–2027). Alongside my degree, I work in logistics, where I deal with real vendors, real deadlines and real shipments every day.</p>
+      <p>That mix shows up in how I work: I design and build with CAD and fabrication tools, and I understand what it takes to source, move and deliver what gets built.</p>
+    </div>
+    <div>
+      <p>I want to start my career in the automotive or manufacturing industry, applying my engineering knowledge and strengthening my procurement and supply chain skills.</p>
+      <p>Colleagues and seniors will tell you the same three things: I adapt quickly, communicate clearly and keep learning.</p>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Where I work now</h2>
+  <div class="tl">
+    <h3>Sales Executive Intern</h3>
+    <div class="meta">Shree Sai Logistics, June 2024 to present</div>
+    <ul>
+      <li>Coordinate with transport vendors and customers for timely vehicle placement and dispatch.</li>
+      <li>Support procurement and sourcing by communicating with transport partners.</li>
+      <li>Prepare transport documentation, quotations and shipment records.</li>
+      <li>Monitor order execution and resolve operational issues to improve customer satisfaction.</li>
+      <li>Build practical understanding of freight operations, vendor management and logistics planning.</li>
+      <li>Work with senior management on day-to-day operational decisions.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="project">
+  <h2>Something I built from waste</h2>
+  <div class="sheet">
+    <h3>Design &amp; Fabrication of a Sustainable Sitting Table Using Waste Tyres</h3>
+    <div class="art">
+      <svg viewBox="0 0 240 200" width="100%" style="max-width:300px" role="img" aria-label="Sketch of a table made from stacked tyres with a flat top">
+        <g fill="none" stroke="var(--ink)" stroke-width="3">
+          <ellipse cx="120" cy="56" rx="92" ry="22" fill="var(--bg)"/><path d="M28 56v10c0 12 41 22 92 22s92-10 92-22V56"/>
+          <ellipse cx="120" cy="118" rx="52" ry="14"/><ellipse cx="120" cy="118" rx="26" ry="7" stroke="var(--accent)"/>
+          <path d="M68 118v36c0 8 23 14 52 14s52-6 52-14v-36"/><ellipse cx="120" cy="154" rx="52" ry="14" stroke-dasharray="4 6"/>
+        </g>
+        <path d="M20 190h200" stroke="var(--line)" stroke-width="3" stroke-dasharray="3 9" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <dl>
+      <dt>Material</dt><dd>Discarded tyres, reused</dd>
+      <dt>Process</dt><dd>Drilling, cutting, fastening</dd>
+      <dt>Focus</dt><dd>Ergonomics, aesthetics, durability</dd>
+      <dt>Theme</dt><dd>Sustainable engineering, recycling</dd>
+      <dt>Outcome</dt><dd>Presented with cost and feasibility analysis</dd>
+    </dl>
+  </div>
+  <p class="proj-note">I chose materials, shaped the design for comfort and strength, built it by hand, and presented the cost and feasibility case.</p>
+</section>
+
+<section id="skills">
+  <h2>What I bring to the team</h2>
+  <div class="skills">
+    <div class="card"><h3>Design tools</h3><div class="tags"><span class="hi">AutoCAD</span><span class="hi">SolidWorks</span><span>Engineering drawing</span><span>CAD modelling</span></div></div>
+    <div class="card"><h3>Supply chain</h3><div class="tags"><span class="hi">Vendor coordination</span><span>Procurement support</span><span>Logistics operations</span><span>Freight planning</span></div></div>
+    <div class="card"><h3>Engineering</h3><div class="tags"><span>Manufacturing processes</span><span>Machine design</span><span>Thermodynamics</span><span>Strength of materials</span><span>Fluid mechanics</span><span>Production engineering</span></div></div>
+    <div class="card"><h3>Office and people</h3><div class="tags"><span class="hi">MS Excel (intermediate)</span><span>PowerPoint</span><span>Word</span><span>Communication</span><span>Teamwork</span><span>Problem solving</span></div></div>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Learning and recognition</h2>
+  <div class="edu">
+    <div class="card"><small>Manav Rachna University</small><b>2023–2027</b>B.Tech, Mechanical Engineering<br><small>CGPA 6.0</small></div>
+    <div class="card"><small>Modern Vidya Niketan</small><b>70%</b>Class XII, 2023</div>
+    <div class="card"><small>Modern Vidya Niketan</small><b>85%</b>Class X, 2021</div>
+  </div>
+  <ul class="certs">
+    <li>Solar Energy Renewal Course</li>
+    <li>ICCCT Participation</li>
+    <li>Creovate 2025: organized the Line Follower event</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <div class="contact">
+    <h2>Let’s build something that moves</h2>
+    <p>Looking for an internship or entry role in automotive, EV, manufacturing, sourcing or supply chain? I’d like to hear about it. I speak English and Hindi.</p>
+    <div class="links">
+      <a href="mailto:hach.vyas2005@gmail.com">Email <span>hach.vyas2005@gmail.com</span></a>
+      <a href="tel:+919211318665">Call <span>+91 92113 18665</span></a>
+      <a href="https://www.linkedin.com/in/chayan-vyas-5381aa307" target="_blank" rel="noopener">LinkedIn <span>chayan-vyas</span></a>
+    </div>
+  </div>
+</section>
+</div>
+</main>
+<footer><div class="wrap">© 2026 Chayan Vyas · Faridabad, Haryana</div></footer>
+</body>
+</html>
